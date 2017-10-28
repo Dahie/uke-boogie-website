@@ -45,13 +45,14 @@ body.page-template-page-fullsingle-me {
 	background-color: $color-background;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	font-size: 45px;
-	line-height: 60px;
+	font-size: 20px;
+	line-height: 23px;
 	letter-spacing: -0.5px;
 	color: $color-text;
 	background-image: $image-background;
 	background-position: center center;
 	background-size:cover;
+
 
 	//-------------------------------------------------------------------------------
 	// Site Origin Page Builder Global Styles
@@ -108,13 +109,14 @@ body.page-template-page-fullsingle-me {
 		flex-direction: column;
 		align-self: left;
 		animation: fadein 2s;
+		//display: none;
 
 		@media (max-width: $bp-mobile ) {
 			align-self: center;
 		}
 
 	img {
-		max-width: 165px;
+		max-width: 265px;
 		height: auto;
 	}
 
@@ -131,7 +133,6 @@ body.page-template-page-fullsingle-me {
 	justify-content: center;
 	animation: fadein 4s;
 	letter-spacing: -1px;
-	max-width: 66%;
 
 	@media (max-width: $bp-tablet ) {
 		max-width: none;
@@ -228,6 +229,7 @@ body.page-template-page-fullsingle-me {
 		font-size: 12px;
 		line-height: 14px;
 		font-weight: 400;
+		margin-top: 20px;
 
 		a {
 			color: $color-text;
@@ -288,6 +290,9 @@ body.page-template-page-fullsingle-me.me-video {
 
 	// dark overlay, tweak the 0.6 if needed = 60% darkness
 	.fs-me {
-		background-color: rgba(0,0,0,0.6);
+		//background-color: rgba(0,0,0,0.6);
+		background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(161,219,255,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(161,219,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(161,219,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
 }

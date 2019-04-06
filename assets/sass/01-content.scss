@@ -63,8 +63,7 @@ body.page-template-page-fullsingle-me {
 		color: $color-text;
 
 		@media (max-width: $bp-tablet ) {
-			font-size: 32px;
-			line-height: 40px;
+			line-height: 32px;
 		}
 
 	}
@@ -93,6 +92,7 @@ body.page-template-page-fullsingle-me {
 
 		@media (max-width: $bp-mobile ) {
 			height: 90vh; // as padding now 5vh 5vw
+			width: 90vw;
 		}
 
 	}
@@ -109,16 +109,23 @@ body.page-template-page-fullsingle-me {
 		flex-direction: column;
 		align-self: left;
 		animation: fadein 2s;
-		//display: none;
+
+
+		img {
+			max-width: 265px;
+			height: auto;
+		}
+
 
 		@media (max-width: $bp-mobile ) {
 			align-self: center;
+
+			img {
+		    max-width: 240px;
+			}
 		}
 
-	img {
-		max-width: 265px;
-		height: auto;
-	}
+
 
 }
 
@@ -159,7 +166,6 @@ body.page-template-page-fullsingle-me {
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
-	// animation: fadein 6s;
 	margin-top: auto;
 
 	ul {
@@ -172,8 +178,6 @@ body.page-template-page-fullsingle-me {
 
 			a {
 				display: inline-block;
-				width: 30px;
-				height: 30px;
 				cursor: pointer;
 
 				//-------------------------------------------------------------------------------
@@ -182,8 +186,8 @@ body.page-template-page-fullsingle-me {
 
 				.svg-icon {
 					padding: 4px;
-					width: 22px;
-					height: 22px;
+					width: 40px;
+					height: 40px;
 					margin: 0;
 					display: block;
 				}
